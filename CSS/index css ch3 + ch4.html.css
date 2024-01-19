@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   }
+
+head,body{
+    height: 100%;
+    width: 100%;   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card1{
+    height: 250px;
+    width: 250px;
+    margin-left: 10px;
+    margin:10px ;
+    border: 1px solid black;
+    display: inline-block;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgb(51, 51, 238);
+}
+.card1 img{
+   height: 80%;
+   width: 80%;
+   border-radius: 50px;
+}
+
+.detail1,.detail2{
+    padding:0 0 0 25%;
+}
+.card2{
+    height: 250px;
+    width: 250px;
+    background-color: transparent;
+    margin: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    display: inline-block;
+    box-shadow: 0px 4px 8px rgb(231, 29, 207);
+}
+.card2 img{
+    height: 80%;
+    width: 80%;
+    border-radius: 50px;
+ }
+
+ .card1:hover{
+    box-shadow: 4px 8px 10px rgb(51, 51, 238);
+    transition: 0.2s 0.1s; 
+    /* transition-delay: ; */
+}
+ .card2:hover{
+    box-shadow: 4px 8px 10px rgb(231, 29, 207);
+    transition: 0.2s 0.1s; 
+}
+
+.smiley{
+    height: 200px;
+    width: 200px;
+    background-color: rgb(255, 200, 0);
+    display: flex;
+    position: relative;
+    border-radius: 50%;
+}
+.eye1{
+    height: 25px;
+    width: 25px;
+    background-color: black;
+    border-radius: 50%;
+    margin: 50px 20px 0 55px;
+}
+.eye2{
+    height: 25px;
+    width: 25px;
+    background-color: black;
+    border-radius: 50%;
+    margin: 50px 20px 0 20px;
+}
+.mouth{
+    background-color: rgb(187, 20, 20);
+    height: 20%;
+    width: 60%;
+    margin: 60% 0 0 20%; 
+    position: absolute;
+    border-radius: 0 0 30px 30px;
+}

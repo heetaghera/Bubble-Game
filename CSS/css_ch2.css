@@ -1,0 +1,25 @@
+h1,h3,p{
+    color: #b92b27;
+}
+nav,nav a, p a{
+    color: hotpink;
+}
+
+/* input[type="text"],input[type="password"]{
+    color: blue; */
+/* } */
+p + h3{
+    text-decoration: double underline;
+}
+span button{
+    background-color: cornflowerblue;
+    color: darkblue;
+}
+div > input{
+    background-color: darksalmon;
+}
+
+::selection{
+    background-color:yellow;
+    color:red;
+}

@@ -1,0 +1,41 @@
+#mainTopic{
+    color: blue;
+}
+*{
+    text-align: center;
+}
+h1,h3,h5{
+    font-family: georgia;
+}
+
+.paragraph{
+    color: white;
+    background-color: cornflowerblue;
+}
+div>button{
+    background-color: purple;
+    color: azure;
+}
+button:hover{
+    background-color: yellow;
+    color: blue;
+}
+p:nth-of-type(2n+1){
+    color: yellow;
+}
+h1::first-letter{
+    color: red;
+}
+input[type="checkbox"]:checked + label {
+    color:rgb(42, 165, 65);
+    font-weight: bold;
+}
+/* same as above also done by id */
+/* #yes:checked + label{
+    color: rgb(174, 255, 0);
+    font-weight: bold;
+} */
+/* .mc:checked + label{
+    color: rgb(255, 0, 21);
+    font-weight: bold;
+} */
