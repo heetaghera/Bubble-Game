@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+head,body{
+    height: 100%;
+    width: 100%;
+}
+
+.bulb{
+    height: 12rem;
+    width: 12rem;
+    background-color: yellow;
+    margin: 3rem;
+    border-radius: 50%;
+    border: 0.12rem solid black;
+}
+
+.btn{
+    margin-left: 9rem;
+    padding: 0.6rem 2rem;
+    font-size: 1.2rem;
+}
