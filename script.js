@@ -30,8 +30,16 @@ function timer(){
 }
 
 function newhits(){
-   hitno = Math.floor(Math.random()*10);
-   document.querySelector("#newhits").textContent = hitno;
+    var prehit = hitno;
+    console.log("prehit"+prehit);
+
+    hitno = Math.floor(Math.random()*10);
+    document.querySelector("#newhits").textContent = hitno;
+    // while loop for "The number that just came should not appear immediately again"
+    // mean hit=5 so next hit won't be 5
+    while(hitno == prehit){
+    newhits();
+    }
 }
 
 function score_increase(){
@@ -43,6 +51,7 @@ function calculate(){
     document.querySelector(".pbtm")
     .addEventListener("click",function (dets) {
     var clicked_num = Number(dets.target.textContent)
+    console.log(clicked_num)
     if(clicked_num === hitno){
         score_increase();
         makebubble();
