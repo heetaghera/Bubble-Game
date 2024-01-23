@@ -1,6 +1,7 @@
 var totaltime=60;
 var score = 0;
 var hitno ;
+var prehit 
 var rn;
 newhits();
 
@@ -30,9 +31,7 @@ function timer(){
 }
 
 function newhits(){
-    var prehit = hitno;
-    console.log("prehit"+prehit);
-
+    prehit = hitno;
     hitno = Math.floor(Math.random()*10);
     document.querySelector("#newhits").textContent = hitno;
     // while loop for "The number that just came should not appear immediately again"
@@ -51,7 +50,6 @@ function calculate(){
     document.querySelector(".pbtm")
     .addEventListener("click",function (dets) {
     var clicked_num = Number(dets.target.textContent)
-    console.log(clicked_num)
     if(clicked_num === hitno){
         score_increase();
         makebubble();
