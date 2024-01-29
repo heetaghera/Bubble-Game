@@ -34,8 +34,8 @@ function newhits(){
     prehit = hitno;
     hitno = Math.floor(Math.random()*10);
     document.querySelector("#newhits").textContent = hitno;
-    // while loop for "The number that just came should not appear immediately again"
-    // mean hit=5 so next hit won't be 5
+    // while loop for "Same hit_number contiguously not occur twice "
+    // mean current hit=5 so next hit won't be 5 (it will be something else instead of 5)
     while(hitno == prehit){
     newhits();
     }
@@ -57,7 +57,6 @@ function calculate(){
     }
 })
 }
-
 
 calculate();
 timer();
