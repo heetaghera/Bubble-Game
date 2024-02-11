@@ -1,4 +1,4 @@
-var totaltime=60;
+var totaltime=15;
 var score = 0;
 var hitno ;
 var prehit 
@@ -8,13 +8,26 @@ newhits();
 function makebubble(){
     var clutter = "";
     
-    for(var i=1;i<=140;i++){
-        rn =Math.floor(Math.random()*10);
-        clutter +=`<div class="bubble">${rn}</div>`;
+    if(window.innerWidth < 520 ){
+        var bubble_count = 40;
+        var bubble_leftmargin = 2;
+        var bubble_topmargin = 1.5;
+    }
+
+    else{
+        var bubble_count = 140;
+        var bubble_leftmargin = 1.5;
+        var bubble_topmargin = 2;
+    }
+
+    for (var i = 0; i < bubble_count; i++) {
+        rn = Math.floor(Math.random() * 10);
+        clutter += `<div class="bubble" style=" margin-left:${rn * bubble_leftmargin}px; margin-top: ${rn * bubble_topmargin}px;">${rn}</div>`;
     }
 
     var a = document.querySelector(".pbtm")
     a.innerHTML=clutter;
+
 }
 
 function timer(){
